@@ -13,7 +13,8 @@
 <meta property="og:description" content="From Mach 2 in the F-15C to the Idaho backcountry. On-air aviation analysis and YouTube partnerships — Cleared Direct.">
 <meta property="og:image" content="https://cleared.direct/assets/hero.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -83,7 +84,7 @@ nav.scrolled{background:rgba(10,10,13,.92);backdrop-filter:blur(12px);border-col
 
 /* stats */
 .stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2);padding:0}
-.stats .wrap{display:grid;grid-template-columns:repeat(5,1fr)}
+.stats .wrap{display:grid;grid-template-columns:repeat(6,1fr)}
 .stat{padding:34px 18px;text-align:center;border-left:1px solid var(--line)}
 .stat:first-child{border-left:none}
 .stat b{display:block;font-family:var(--display);font-weight:700;font-size:38px;line-height:1;color:#fff}
@@ -199,11 +200,12 @@ footer .flinks{display:flex;gap:22px}
 
 <div class="stats">
   <div class="wrap">
+    <div class="stat"><b id="stat-total-hours">7,500+</b><span>Hours Total Time</span></div>
     <div class="stat"><b>21</b><span>Years &middot; USAF</span></div>
-    <div class="stat"><b>2,400+</b><span>Hours &middot; F-15C Eagle</span></div>
-    <div class="stat"><b>2,400+</b><span>Hours &middot; 737 Captain</span></div>
+    <div class="stat"><b id="stat-f15-hours">2,400+</b><span>Hours &middot; F-15C Eagle</span></div>
+    <div class="stat"><b id="stat-737-hours">2,400+</b><span>Hours &middot; 737 Captain</span></div>
     <div class="stat"><b>M.S.</b><span>Aviation Safety</span></div>
-    <div class="stat"><b>18K+</b><span>YouTube Subscribers</span></div>
+    <div class="stat"><b id="stat-subs">18K+</b><span>YouTube Subscribers</span></div>
   </div>
 </div>
 
@@ -256,7 +258,7 @@ footer .flinks{display:flex;gap:22px}
         </a>
         <div class="app-row">
           <span class="kind">Keynotes</span>
-          <span class="what">Speaking Engagements<small>From classified fighter test operations to the Patagonia Bush Pilot Fly-In, Argentina</small></span>
+          <span class="what">Speaking Engagements<small>Epic Aircraft Fly-In with Trent Palmer (Sept 2025) &middot; Patagonia Bush Pilot Fly-In, Argentina &middot; classified fighter test operations</small></span>
           <span class="go"></span>
         </div>
       </div>
@@ -268,7 +270,8 @@ footer .flinks{display:flex;gap:22px}
 <section id="logbook" class="logbook">
   <div class="wrap">
     <div class="eyebrow reveal">The Logbook</div>
-    <h2 class="reveal">Four Aircraft,<br>One Obsession</h2>
+    <h2 class="reveal">7,500+ Hours.<br>One Obsession.</h2>
+    <p class="lead reveal" style="margin-bottom:40px">Licensed on his 21st birthday &mdash; October 22, 1997 &mdash; Steve has logged over <span id="stat-total-hours-2">7,500</span> hours across everything from fabric-and-tube taildraggers to frontline fighters.</p>
     <div class="reveal">
       <div class="row">
         <div class="ac"><small>Military</small>F-15C Eagle</div>
@@ -290,6 +293,20 @@ footer .flinks{display:flex;gap:22px}
         <div class="role">Classic V-tail cross-country machine — owned and flown</div>
         <div class="hrs">Owner</div>
       </div>
+    </div>
+    <div class="chips reveal" style="margin-top:34px">
+      <span class="chip" style="border-color:transparent;background:none;padding-left:0;color:var(--red)">Also in the logbook:</span>
+      <span class="chip">F-16 Viper</span>
+      <span class="chip">T-38 Talon</span>
+      <span class="chip">T-37 Tweet</span>
+      <span class="chip">Stearman</span>
+      <span class="chip">Long-EZ</span>
+      <span class="chip">Lancair 360</span>
+      <span class="chip">Van&rsquo;s RV-6</span>
+      <span class="chip">Kitfox</span>
+      <span class="chip">Cessna 152 / 172 / 210</span>
+      <span class="chip">Piper Warrior II</span>
+      <span class="chip" style="border-style:dashed;color:var(--dim)">&hellip;and counting</span>
     </div>
     <div class="photo-strip reveal">
       <img src="assets/f15-cockpit.jpg" alt="Steve Cox in the cockpit of an F-15C">
